@@ -6,10 +6,11 @@ import java.awt.event.ActionListener;
 public class VentanaPrincipal extends JFrame {
     public VentanaPrincipal() {
         setTitle("Calculadora de Figuras Geométricas");
-        setSize(300, 200);
+        setSize(400, 200);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setLayout(new GridLayout(3, 1));
+        setResizable(false);
 
         JButton btnCilindro = new JButton("Cilindro");
         JButton btnEsfera = new JButton("Esfera");

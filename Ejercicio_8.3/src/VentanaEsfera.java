@@ -9,10 +9,11 @@ public class VentanaEsfera extends JFrame {
 
     public VentanaEsfera() {
         setTitle("Esfera");
-        setSize(300, 150);
+        setSize(300, 200);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setLocationRelativeTo(null);
         setLayout(new GridLayout(4, 2));
+        setResizable(false);
 
         add(new JLabel("Radio:"));
         txtRadio = new JTextField();

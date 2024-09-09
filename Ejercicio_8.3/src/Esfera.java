@@ -8,11 +8,13 @@ public class Esfera extends FiguraGeometrica {
 
     @Override
     public double calcularVolumen() {
-        return (4.0 / 3.0) * Math.PI * Math.pow(radio, 3);
+
+        return Math.round(((4.0 / 3.0) * Math.PI * Math.pow(radio, 3))*1000.0)/1000.0;
     }
 
     @Override
     public double calcularSuperficie() {
-        return 4 * Math.PI * Math.pow(radio, 2);
+
+        return Math.round((4 * Math.PI * Math.pow(radio, 2))*100.0)/100.0;
     }
 }

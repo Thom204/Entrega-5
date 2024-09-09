@@ -9,10 +9,11 @@ public class VentanaPiramide extends JFrame {
 
     public VentanaPiramide() {
         setTitle("Pirámide");
-        setSize(400, 200);
+        setSize(300, 200);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setLocationRelativeTo(null);
         setLayout(new GridLayout(6, 2));
+        setResizable(false);
 
         add(new JLabel("Base:"));
         txtBase = new JTextField();

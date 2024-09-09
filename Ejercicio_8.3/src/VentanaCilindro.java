@@ -13,6 +13,7 @@ public class VentanaCilindro extends JFrame {
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setLocationRelativeTo(null);
         setLayout(new GridLayout(5, 2));
+        setResizable(false);
 
         add(new JLabel("Radio:"));
         txtRadio = new JTextField();

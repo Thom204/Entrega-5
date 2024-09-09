@@ -9,11 +9,13 @@ public class Cilindro extends FiguraGeometrica {
 
     @Override
     public double calcularVolumen() {
-        return Math.PI * Math.pow(radio, 2) * altura;
+
+        return Math.round((Math.PI * Math.pow(radio, 2) * altura)*100.0)/100.0;
     }
 
     @Override
     public double calcularSuperficie() {
-        return 2 * Math.PI * radio * (radio + altura);
+
+        return Math.round((2 * Math.PI * radio * (radio + altura))*100.0)/100.0;
     }
 }
