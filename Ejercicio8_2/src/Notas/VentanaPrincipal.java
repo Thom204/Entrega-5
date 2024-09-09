@@ -97,7 +97,7 @@ public class VentanaPrincipal extends JFrame implements ActionListener {
                 notas.calcularDesviación();
                 promedio.setText("Promedio = " + String.valueOf(String.format("%.2f", notas.calcularPromedio())));
                 double desv = notas.calcularDesviación();
-                desviación.setText("Desviación estándar = " + String.format("%.2f", desv));
+                desviación.setText("Desviacion estándar = " + String.format("%.2f", desv));
                 mayor.setText("Valor mayor = " + String.valueOf(notas.calcularMayor()));
                 menor.setText("Valor menor = " + String.valueOf(notas.calcularMenor()));
             }
@@ -107,6 +107,10 @@ public class VentanaPrincipal extends JFrame implements ActionListener {
                 campoNota3.setText("");
                 campoNota4.setText("");
                 campoNota5.setText("");
+                promedio.setText("Promedio = ");
+                desviación.setText("Desviacion = ");
+                mayor.setText("Nota mayor = ");
+                menor.setText("Nota menor = ");
             }
         }catch(Exception error){
                 promedio.setText("Entradas invalidas");
